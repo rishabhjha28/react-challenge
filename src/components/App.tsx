@@ -1,12 +1,20 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import styled from '@emotion/styled'
 import Header from './Header'
+import Search from './Search'
+import MidPart from './MidPart'
+import Footer from './Footer'
+import FooterHeader from './FooterHeader'
 
 const App: FC = () => {
+  
   return (
     <Container>
       <Header />
-      {/* Happy coding! */}
+      <Search />
+      <MidPart/>
+      <FooterHeader/>
+      <Footer/>
     </Container>
   )
 }
